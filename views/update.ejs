@@ -1,0 +1,15 @@
+<%- include("partials/header")%>
+<%- include("partials/nav")%>
+
+<form action="/update/<%=user._id%>" method="post">
+    <input type="text" value="<%= user.username%>" name="username" placeholder="Username"> 
+    <input type="email" value="<%= user.Email%>" name="Email" >
+    <button>LOGIN</button>
+    
+</form>
+
+
+
+
+<%- include("partials/footer")%>
+

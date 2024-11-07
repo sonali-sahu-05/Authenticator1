@@ -1,0 +1,47 @@
+<%- include("partials/header")%>
+<%- include("partials/nav")%>
+
+<form action="/signup" method="post">
+    <input type="text" name="username" placeholder="Username"> 
+    <input type="email" name="email" placeholder="Email">
+    <input type="password" name="password" placeholder="************">
+    <p>Aleready have an Account? <a href="signin">signin</a></p>
+    <button>LOGIN</button>
+    
+</form>
+
+
+<!-- // try{
+    //   const User=new USER(req.body);
+    //   await User.save();
+    //   res.redirect("/signup")
+    // }catch(error){
+    //   res.send(error)
+    // }
+  
+    USER.create(req.body)
+    .then(()=>{
+      res.redirect("/signup");
+    })
+    .catch((err)=>{
+      res.send(err);
+    }) -->
+
+    <!-- const moongoose=require("mongoose");
+
+const userModel = new moongoose.Schema({
+    
+})
+
+module.exports=moongoose.model("user",userModel);
+
+
+const moongoose=require("mongoose");
+
+moongoose
+.connect("mongodb://127.0.0.1:27017/m7")
+.then(()=>console.log("DB Connected"))
+.catch((err)=>console.log(err.message)); -->
+
+<%- include("partials/footer")%>
+

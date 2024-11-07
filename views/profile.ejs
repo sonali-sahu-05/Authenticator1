@@ -1,0 +1,18 @@
+<%- include("partials/header")%>
+<%- include("partials/nav")%>
+
+<h2>Registered Users</h2>
+<hr>
+<form action="/search" method="post">
+    <input type="text" placeholder=" Search By Username" name="username">
+</form>
+
+<%posts.forEach(function(p){%>
+    <h1><%=p.title%></h1>
+    <p><%= p.description%></p>
+    <a href="/deletepost/<%= p._id%>">Delete</a>
+    <a href="/Update/<%= p._id%>">Update</a>
+<%})%>
+
+<%- include("partials/footer")%>
+

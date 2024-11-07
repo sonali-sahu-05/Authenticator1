@@ -1,0 +1,13 @@
+<%- include("partials/header")%>
+<%- include("partials/nav")%>
+<!--  -->
+<h1>Forget Password</h1>
+
+<form action="/match-otp/<%=email%>" method="post">
+    <input type="number" name="otp" id="Enter otp">
+    <button>Confirm</button>
+    <br>
+</form>
+<!--  -->
+<%- include("partials/footer")%>
+

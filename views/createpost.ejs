@@ -1,0 +1,21 @@
+<%- include("partials/header")%>
+<%- include("partials/nav")%>
+<!--  -->
+
+<h1>Create Post</h1>
+
+<form action="/createpost" method="POST">
+    <input type="text" placeholder="Title" name="title" />
+    <!--  -->
+    <textarea
+        name="description"
+        placeholder="enter description here..."
+    ></textarea>
+    <button>Signup</button>
+    <br />
+    <p>Already have an account ? <a href="/signin">Signin</a></p>
+</form>
+
+<!--  -->
+<%- include("partials/footer")%>
+
